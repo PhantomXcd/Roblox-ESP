@@ -635,7 +635,7 @@ for Index, Function in pairs(HookedFunctions) do
 end
 
 local MainUI = UILibrary.new(Color3.fromRGB(255, 79, 87));
-local Window = MainUI:LoadWindow('<font color="#ff4f57">PhantomXcd</font> ESP GUI', UDim2.fromOffset(400, 279));
+local Window = MainUI:LoadWindow('                                                            PhantomXcds <font color="#ff4f57">Universal</font> ESP and Aimbot', UDim2.fromOffset(600, 500));
 local ESP = Window.NewPage("Esp");
 local Aimbot = Window.NewPage("Aimbot");
 local EspSettingsUI = ESP.NewSection("Esp");
@@ -730,7 +730,7 @@ SilentAim.Dropdown("Lock Type", {"Closest Cursor", "Closest Player"}, function(C
     end
 end);
 
-Aimbot.Toggle("Aimbot (M2)", AimbotSettings.Enabled, function(Callback)
+Aimbot.Toggle("Aimbot", AimbotSettings.Enabled, function(Callback)
     AimbotSettings.Enabled = Callback
     if (not AimbotSettings.FirstPerson and not AimbotSettings.ThirdPerson) then
         AimbotSettings.FirstPerson = true
