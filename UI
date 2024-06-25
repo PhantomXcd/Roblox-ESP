@@ -472,7 +472,7 @@ function UILibrary:LoadWindow(Title, Size)
 	Utils.Click(OverlayMain.Close, "BackgroundColor3");
 
 	Window.Size = Size
-	Window.Position = UDim2new(0.5, -Size.X.Offset / 2, 0.5, -Size.Y.Offset / 2);
+	Window.Position = UDim2new(0.8, -Size.X.Offset / 2, 0.5, -Size.Y.Offset / 2);
 	Window.Main.Title.Text = Title
 	Window.Parent = self.UI
 
